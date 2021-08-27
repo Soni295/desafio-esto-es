@@ -7,9 +7,24 @@ export const ListOfProjects = () => {
   const  projects  = useSelector(state => state.projects.data)
   return(
     <Box
-      marginX='48px'
-      borderRadius='5px'
-      mt='32px'
+      marginX={[
+        '0',
+        '10px',
+        '20px',
+        '48px'
+      ]}
+      borderRadius={[
+        '0',
+        '5px',
+        '5px',
+        '5px',
+      ]}
+      mt={[
+        '20px',
+        '20px',
+        '25px',
+        '32px',
+      ]}
       bg='white'
       boxShadow='md'
     >

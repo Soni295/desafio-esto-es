@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react"
-import { HorizontalBar } from "../HorizontalBar"
 import { AddProjectBtn } from "./AddProjectBtn"
+import { HorizontalBar } from "../HorizontalBar"
 
 export const ActionBar = () => {
   return (
@@ -11,8 +11,14 @@ export const ActionBar = () => {
       >
         <Text
           fontWeight= 'bold'
-          fontSize='1.375rem'
           as='h2'
+          fontSize={[
+            '20px',
+            '22px',
+            '26px',
+            '28px'
+          ]}
+          alignSelf='center'
           justifySelf='start'
         >
           My projects
@@ -22,4 +28,3 @@ export const ActionBar = () => {
     </HorizontalBar>
   )
 }
-// 22px fontSize

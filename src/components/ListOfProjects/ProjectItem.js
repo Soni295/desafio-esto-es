@@ -4,7 +4,19 @@ import { UserAvatar } from "../UserAvatar"
 import { MenuActions } from "./MenuActions"
 
 export const ProjectItem =
-  ({title, creationDate, projectManager, assignedTo, status}) => {
+  ({projectName, creationDate, projectManager, assignedTo, status}) => {
+
+  const options = {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  }
+  let i = new Intl.DateTimeFormat('es', options).format(new Date());
+
+  console.log(i)
   return(
     <RowProject
      >
@@ -12,7 +24,7 @@ export const ProjectItem =
         <Text
           fontSize='18px'
         >
-          {title}
+          {projectName}
         </Text>
         <Text
           color='blackAlpha.500'
@@ -25,10 +37,23 @@ export const ProjectItem =
         src={projectManager.icon}
       />
       <UserAvatar
+        display={[
+          'none',
+          'none',
+          'block',
+          'block'
+        ]}
         name={assignedTo.name}
         src={assignedTo.icon}
       />
-      <Box>
+      <Box
+        display={[
+          'none',
+          'none',
+          'block',
+          'block'
+        ]}
+      >
         {status}
       </Box>
       <MenuActions />

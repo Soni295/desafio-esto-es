@@ -1,166 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-
-const initialState = {
-  data: [
-    {
-      id: '01',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '02',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '03',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '04',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '05',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '06',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '07',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '08',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '09',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '10',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-    {
-      id: '11',
-      title: 'Landing page',
-      creationDate : '09/09/2020 10:30am',
-      projectManager: {
-        name: 'Walt Cosani',
-        icon: null
-      },
-      assignedTo: {
-        name: 'Ignacio Truffa',
-        icon: null
-      },
-      status: 'Enable'
-    },
-  ],
-  status: 'idle',
-  error: null,
-}
-
+import { initialState } from './inicialState';
 
 const name = 'project'
 
@@ -168,8 +7,11 @@ const TYPES = {
   CREATE: name + '/create'
 }
 
-export const addProject = createAsyncThunk(TYPES.CREATE, async() => {
-
+export const addProject = createAsyncThunk(TYPES.CREATE, async(project) => {
+  setTimeout(()=> {
+    console.log(project)
+  }, 1000)
+  return project
 })
 
 
@@ -181,10 +23,11 @@ const projectSlice = createSlice({
     [addProject.pending]: (state, action) => {
       state.status = 'loading';
     },
-    [addProject.fulfilled]: (state, action) => {
+    [addProject.fulfilled]: (state, {payload}) => {
       state.status = 'succeeded';
       // Add any fetched posts to the array
-      state.data = action.payload;
+      state.data = [...state.data, payload]
+      //state.data = action.payload;
     },
     [addProject.rejected]: (state, action) => {
       state.status = 'failed';

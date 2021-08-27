@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Box } from "@chakra-ui/react"
 
@@ -8,6 +7,7 @@ import { Navbar } from './components/NavBar';
 import { Home } from './pages/Home';
 import { CreateProject } from './pages/CreateProject';
 import { EditProject } from './pages/EditProject';
+import './App.css';
 
 const App = () => {
   return (

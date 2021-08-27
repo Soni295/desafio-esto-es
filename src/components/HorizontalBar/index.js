@@ -5,19 +5,20 @@ export const HorizontalBar = ({children, ...rest}) => {
     <Box
       w='100%'
       h={[
-        '2.4375rem', //39
-        null,
-        null,
-        '82px' //58
+        '60px',
+        '68px',
+        '75px',
+        '82px'
       ]}
       bg='white'
       paddingX={[
-        '17px',
-        null,
-        null,
+        '20px',
+        '30px',
+        '45px',
         '59px'
       ]}
-      borderBottom='1px solid #9d9d9d'
+      borderBottom='1px solid'
+      borderBottomColor='blackAlpha.400'
       display='grid'
       alignItems='center'
       {...rest}

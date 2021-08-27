@@ -1,4 +1,5 @@
 import * as Yup from 'yup';
+import { addProject } from '../../reducers/projectSlice'
 
 export const initialValues = {
   projectName: '',
@@ -30,6 +31,31 @@ export const validationSchema = Yup.object({
     .required('You must to select a status'),
 })
 
-export const onSubmit = (values) => {
-  console.log(values)
+export const onSubmit = dispatch => ({projectName, projectManager, status, assignedTo}) => {
+
+
+  const options = {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  }
+  let now = new Intl.DateTimeFormat('es', options).format(new Date())
+
+  const data = {
+    projectName,
+    status,
+    projectManager: {
+      name: projectManager,
+      icon: null
+    },
+    assignedTo: {
+      name: assignedTo,
+      icon: null
+    }
+    , creationDate: now
+  }
+  dispatch(addProject(data))
 }

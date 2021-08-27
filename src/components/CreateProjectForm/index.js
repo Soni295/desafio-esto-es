@@ -1,4 +1,5 @@
 import { useFormik } from 'formik';
+import { useDispatch } from "react-redux";
 
 import { initialValues, validationSchema, onSubmit } from './form';
 
@@ -7,7 +8,9 @@ import { InputForm, Select } from '../InputForm';
 import { RedBtn } from '../Btn/index';
 
 export const CreateProjectForm = () => {
-  const formik = useFormik({initialValues, validationSchema, onSubmit})
+  const dispatch = useDispatch()
+  const formik = useFormik({initialValues, validationSchema, onSubmit:
+    onSubmit(dispatch)})
 
   const manager = [
     'Walt Cosani',

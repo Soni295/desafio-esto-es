@@ -3,12 +3,33 @@ import { Box } from "@chakra-ui/react"
 export const FormBox = ({children, ...rest}) => {
   return(
     <Box
-      w='900px'
-      padding='60px'
+      w={[
+    '100%',
+    '90%',
+    '80%',
+    '900px',
+      ]}
+      padding={[
+        '20px',
+        '60px',
+        '60px',
+        '60px',
+      ]}
+      paddingY={[
+        '45px',
+        '48px',
+        '55px',
+        '60px',
+      ]}
       bg='white'
       boxShadow='md'
       margin='auto'
-      mt='35px'
+      mt={[
+        '20px',
+        '25px',
+        '30px',
+        '35px'
+      ]}
       borderRadius='5px'
       {...rest}
     >
