@@ -1,6 +1,7 @@
 import './App.css';
 import { Navbar } from './components/NavBar';
 import { ActionBar } from './components/ActionBar';
+import { ListOfProjects } from './components/ListOfProjects';
 import { Box } from "@chakra-ui/react"
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
     >
       <Navbar/>
       <ActionBar />
+      <ListOfProjects />
     </Box>
   )
 }
