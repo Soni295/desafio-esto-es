@@ -16,7 +16,7 @@ export const initialState = {
     },
     {
       id: '02',
-      projectName: 'Landing page',
+      projectName: 'Landing page2',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -30,7 +30,7 @@ export const initialState = {
     },
     {
       id: '03',
-      projectName: 'Landing page',
+      projectName: 'Landing page3',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -44,7 +44,7 @@ export const initialState = {
     },
     {
       id: '04',
-      projectName: 'Landing page',
+      projectName: 'Landing page4',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -58,7 +58,7 @@ export const initialState = {
     },
     {
       id: '05',
-      projectName: 'Landing page',
+      projectName: 'Landing page5',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -72,7 +72,7 @@ export const initialState = {
     },
     {
       id: '06',
-      projectName: 'Landing page',
+      projectName: 'Landing page6',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -86,7 +86,7 @@ export const initialState = {
     },
     {
       id: '07',
-      projectName: 'Landing page',
+      projectName: 'Landing page7',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -100,7 +100,7 @@ export const initialState = {
     },
     {
       id: '08',
-      projectName: 'Landing page',
+      projectName: 'Landing page8',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -114,7 +114,7 @@ export const initialState = {
     },
     {
       id: '09',
-      projectName: 'Landing page',
+      projectName: 'Landing page9',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -128,7 +128,7 @@ export const initialState = {
     },
     {
       id: '10',
-      projectName: 'Landing page',
+      projectName: 'Landing page10',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',
@@ -142,7 +142,7 @@ export const initialState = {
     },
     {
       id: '11',
-      projectName: 'Landing page',
+      projectName: 'Landing page11',
       creationDate : '09/09/2020 10:30am',
       projectManager: {
         name: 'Walt Cosani',

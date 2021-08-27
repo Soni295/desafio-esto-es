@@ -1,10 +1,9 @@
 import { Box } from "@chakra-ui/react"
+
 import { HeadOfList } from "./HeadOfList"
 import { ProjectItem } from "./ProjectItem"
-import { useSelector } from 'react-redux';
 
-export const ListOfProjects = () => {
-  const  projects  = useSelector(state => state.projects.data)
+export const ListOfProjects = ({projects}) => {
   return(
     <Box
       marginX={[

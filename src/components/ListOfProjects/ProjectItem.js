@@ -6,17 +6,6 @@ import { MenuActions } from "./MenuActions"
 export const ProjectItem =
   ({projectName, creationDate, projectManager, assignedTo, status}) => {
 
-  const options = {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: true
-  }
-  let i = new Intl.DateTimeFormat('es', options).format(new Date());
-
-  console.log(i)
   return(
     <RowProject
      >
