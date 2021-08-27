@@ -1,4 +1,5 @@
 export const PATHS = {
   HOME: '/',
-  CREATEPROJECT: '/CreateProject'
+  CREATEPROJECT: '/CreateProject',
+  EDITPROJECT: '/EditProject/:id'
 }

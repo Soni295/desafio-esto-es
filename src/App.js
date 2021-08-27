@@ -2,10 +2,12 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Box } from "@chakra-ui/react"
 
-import { CreateProject } from './pages/CreateProject';
 import { PATHS } from './config/PATHS';
 import { Navbar } from './components/NavBar';
+
 import { Home } from './pages/Home';
+import { CreateProject } from './pages/CreateProject';
+import { EditProject } from './pages/EditProject';
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
         <Switch>
           <Route exact path={PATHS.HOME} component={Home} />
           <Route exact path={PATHS.CREATEPROJECT} component={CreateProject} />
+          <Route exact path={PATHS.EDITPROJECT} component={EditProject} />
         </Switch>
       </Box>
     </Router>
