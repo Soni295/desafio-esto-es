@@ -9,8 +9,7 @@ export const Navbar = () => {
     <HorizontalBar>
       <Image
         src={logo}
-        h='70%'
-        ml='10px'
+        h='50%'
       />
     </HorizontalBar>
   )
