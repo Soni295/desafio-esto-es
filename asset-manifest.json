@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/desafio-esto-es/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/desafio-esto-es/static/js/main.9fc5caed.chunk.js",
+    "main.js.map": "/desafio-esto-es/static/js/main.9fc5caed.chunk.js.map",
+    "runtime-main.js": "/desafio-esto-es/static/js/runtime-main.85ba6cf2.js",
+    "runtime-main.js.map": "/desafio-esto-es/static/js/runtime-main.85ba6cf2.js.map",
+    "static/js/2.47778ae2.chunk.js": "/desafio-esto-es/static/js/2.47778ae2.chunk.js",
+    "static/js/2.47778ae2.chunk.js.map": "/desafio-esto-es/static/js/2.47778ae2.chunk.js.map",
+    "static/js/3.07014e1e.chunk.js": "/desafio-esto-es/static/js/3.07014e1e.chunk.js",
+    "static/js/3.07014e1e.chunk.js.map": "/desafio-esto-es/static/js/3.07014e1e.chunk.js.map",
+    "index.html": "/desafio-esto-es/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/desafio-esto-es/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.47778ae2.chunk.js.LICENSE.txt": "/desafio-esto-es/static/js/2.47778ae2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85ba6cf2.js",
+    "static/js/2.47778ae2.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.9fc5caed.chunk.js"
+  ]
+}
