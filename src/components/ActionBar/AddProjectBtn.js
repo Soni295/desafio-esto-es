@@ -1,11 +1,16 @@
 import { Button } from "@chakra-ui/react"
+import { Link as LinkReact } from "react-router-dom"
+
+import { PATHS } from "../../config/PATHS"
 
 export const AddProjectBtn = () => {
   return (
     <Button
+      as={LinkReact}
       colorScheme='red'
       justifySelf='end'
       fontWeight='100'
+      to={PATHS.CREATEPROJECT}
       h={[
         '2rem',     // 32px
         '2.125rem', // 34px

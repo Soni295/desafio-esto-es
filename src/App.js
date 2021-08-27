@@ -1,20 +1,27 @@
 import './App.css';
-import { Navbar } from './components/NavBar';
-import { ActionBar } from './components/ActionBar';
-import { ListOfProjects } from './components/ListOfProjects';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Box } from "@chakra-ui/react"
+
+import { CreateProject } from './pages/CreateProject';
+import { PATHS } from './config/PATHS';
+import { Navbar } from './components/NavBar';
+import { Home } from './pages/Home';
 
 const App = () => {
   return (
-    <Box
-      w='100vw'
-      h='100vh'
-      bg='blackAlpha.200'
-    >
-      <Navbar/>
-      <ActionBar />
-      <ListOfProjects />
-    </Box>
+    <Router>
+      <Box
+        w='100vw'
+        h='100vh'
+        bg='blackAlpha.200'
+      >
+        <Navbar/>
+        <Switch>
+          <Route exact path={PATHS.HOME} component={Home} />
+          <Route exact path={PATHS.CREATEPROJECT} component={CreateProject} />
+        </Switch>
+      </Box>
+    </Router>
   )
 }
 

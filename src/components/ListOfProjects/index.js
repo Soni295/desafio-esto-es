@@ -9,13 +9,13 @@ export const ListOfProjects = () => {
     <Box
       marginX='48px'
       borderRadius='5px'
-      h='300px'
       mt='32px'
       bg='white'
+      boxShadow='md'
     >
       <HeadOfList />
       {projects.map(project =>
-        <ProjectItem  {...project} key={project.title}/>
+        <ProjectItem  {...project} key={project.title + project.id}/>
       )}
     </Box>
   )

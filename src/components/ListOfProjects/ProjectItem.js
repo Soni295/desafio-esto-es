@@ -4,8 +4,7 @@ import { UserAvatar } from "../UserAvatar"
 import { MenuActions } from "./MenuActions"
 
 export const ProjectItem =
-  ({title, creationDate, projectManager, assignedTo, status}) =>
-  {
+  ({title, creationDate, projectManager, assignedTo, status}) => {
   return(
     <RowProject
      >

@@ -15,7 +15,6 @@ import {
 import { CircleIcon } from "../CircleIcon"
 import { EditIcon } from '@chakra-ui/icons'
 
-
 const ActionBtn = ({children, text}) => {
   return(
     <Wrap
