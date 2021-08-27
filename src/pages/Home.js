@@ -1,4 +1,3 @@
-
 import { ActionBar } from '../components/ActionBar';
 import { ListOfProjects } from '../components/ListOfProjects';
 

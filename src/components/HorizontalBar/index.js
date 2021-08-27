@@ -8,7 +8,7 @@ export const HorizontalBar = ({children, ...rest}) => {
         '2.4375rem', //39
         null,
         null,
-        '3.625rem' //58
+        '82px' //58
       ]}
       bg='white'
       paddingX={[
