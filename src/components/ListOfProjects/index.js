@@ -1,26 +1,10 @@
 import { Box } from "@chakra-ui/react"
 import { HeadOfList } from "./HeadOfList"
 import { ProjectItem } from "./ProjectItem"
-
-const data = [
-  {
-    title: 'Landing page',
-    creationDate : '09/09/2020 10:30am',
-    projectManager: {
-      name: 'Walt Cosani',
-      icon: null
-    },
-    assignedTo: {
-      name: 'Ignacio Truffa',
-      icon: null
-    },
-    status: 'Enable'
-  }
-]
-
-
+import { useSelector } from 'react-redux';
 
 export const ListOfProjects = () => {
+  const  projects  = useSelector(state => state.projects.data)
   return(
     <Box
       marginX='48px'
@@ -30,11 +14,9 @@ export const ListOfProjects = () => {
       bg='white'
     >
       <HeadOfList />
-      {data.map(project =>
-        <ProjectItem  {...project}/>
-      )
-
-      }
+      {projects.map(project =>
+        <ProjectItem  {...project} key={project.title}/>
+      )}
     </Box>
   )
 }

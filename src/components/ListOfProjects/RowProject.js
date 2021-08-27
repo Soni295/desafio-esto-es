@@ -8,7 +8,7 @@ export const RowProject = ({children, ...rest}) => (
     gridTemplateColumns='2fr 2fr 2fr 1fr 1fr'
     alignItems='center'
     paddingLeft='25px'
-      borderBottom='1px solid #9d9d9d'
+    borderBottom='1px solid #9d9d9d'
     {...rest}
   >
     {children}

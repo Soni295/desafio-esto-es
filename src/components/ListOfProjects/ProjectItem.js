@@ -1,19 +1,11 @@
-import { Box, Text, VStack } from "@chakra-ui/react"
+import { Box, Text } from "@chakra-ui/react"
 import { RowProject } from "./RowProject"
 import { UserAvatar } from "../UserAvatar"
+import { MenuActions } from "./MenuActions"
 
-
-const Circule = () => (
-  <Box
-    borderRadius='full'
-    m='0'
-    h='7px'
-    w='7px'
-    bg='black'
-  />
-)
-
-export const ProjectItem = ({title, creationDate, projectManager, assignedTo, status}) => {
+export const ProjectItem =
+  ({title, creationDate, projectManager, assignedTo, status}) =>
+  {
   return(
     <RowProject
      >
@@ -40,11 +32,7 @@ export const ProjectItem = ({title, creationDate, projectManager, assignedTo, st
       <Box>
         {status}
       </Box>
-      <VStack alignItems='start'>
-        <Circule/>
-        <Circule/>
-        <Circule/>
-      </VStack>
+      <MenuActions />
     </RowProject>
   )
 }
